@@ -18,7 +18,7 @@ end
 
 
 function plot_3D()
-%»æÖÆÈıÎ¬ÇúÏß£¬plot3º¯Êı 
+%ç»˜åˆ¶ä¸‰ç»´æ›²çº¿ï¼Œplot3å‡½æ•° 
 global t;
 global theta;
 x = 8*cos(t);
@@ -31,16 +31,16 @@ c1 =10;
 c2 = 10;
 c3= 10;
 r =1;
-%ÈıÎ¬¿Õ¼äÖĞÔ²µÄ²ÎÊı·½³Ì£º(c1,c2,c3)Ô²ĞÄ£¬a£¬b ÏòÁ¿(ÕâÀïËæ»úÈ¡µÄÊı¾İ£¬Ó¦¸ÃÊÇ¸ù¾İÔ²ĞÎ×´¼ÆËã)
-x = c1+ r*5*cos(theta)+r*20*sin(theta);%Ô²ÉÏ¸÷µãµÄx×ø±ê
-y = c2+ r*2*cos(theta)+r*5*sin(theta);%Ô²ÉÏ¸÷µãµÄx×ø±ê
-z = c3+ r*9*cos(theta)+r*15*sin(theta);%Ô²ÉÏ¸÷µãµÄx×ø±ê
+%ä¸‰ç»´ç©ºé—´ä¸­åœ†çš„å‚æ•°æ–¹ç¨‹ï¼š(c1,c2,c3)åœ†å¿ƒï¼Œaï¼Œb å‘é‡(è¿™é‡Œéšæœºå–çš„æ•°æ®ï¼Œåº”è¯¥æ˜¯æ ¹æ®åœ†å½¢çŠ¶è®¡ç®—)
+x = c1+ r*5*cos(theta)+r*20*sin(theta);%åœ†ä¸Šå„ç‚¹çš„xåæ ‡
+y = c2+ r*2*cos(theta)+r*5*sin(theta);%åœ†ä¸Šå„ç‚¹çš„xåæ ‡
+z = c3+ r*9*cos(theta)+r*15*sin(theta);%åœ†ä¸Šå„ç‚¹çš„xåæ ‡
 figure
 plot3(x,y,z)
 end
 
 function mesh_test()
-%»æÖÆÍø¸ñÇúÃæ£¬mesh()
+%ç»˜åˆ¶ç½‘æ ¼æ›²é¢ï¼Œmesh()
 [a,b,c]= peaks(50);
 figure
 subplot(2,2,1); mesh(a,b,c);
@@ -49,7 +49,7 @@ subplot(2,2,3); meshz(a,b,c);
 
 end
 function surf_test()
-%»æÖÆÍø¸ñÇúÃæ£¬mesh()
+%ç»˜åˆ¶ç½‘æ ¼æ›²é¢ï¼Œmesh()
 z= peaks(50);
 figure
 subplot(2,2,1); surf(z);

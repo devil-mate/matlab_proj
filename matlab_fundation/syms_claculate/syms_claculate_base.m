@@ -1,8 +1,10 @@
 function syms_claulate_base()
 clc
 clear
-diff_driver();
+% diff_driver();
+onceRotate();
 end
+
 function diff_driver()
 syms vr vl v w l;
 eq1 =v-(vr+vl)/2;
@@ -15,7 +17,7 @@ end
 
 function linear_alg()
 end
-% solve Çó½âÎö½â
+% solve æ±‚è§£æè§£
 function solve_test()
 syms x y;
 eq1 = x+y-1;
@@ -27,7 +29,7 @@ y =sol.y
 value_x = double(x)
 valude_y = double(y)
 end
-% ÊıÖµ½â£¬fzero ÇóÒ»Ôªº¯ÊıÁãµã/½â·½³Ì
+% æ•°å€¼è§£ï¼Œfzero æ±‚ä¸€å…ƒå‡½æ•°é›¶ç‚¹/è§£æ–¹ç¨‹
 function fzero_test()
 syms x y;
 fun = @(x)(x^2+x-2);
@@ -40,3 +42,43 @@ xx=solve(eq1,x)
 % value_x = double(x)
 % valude_y = double(y)
 end
+
+% å•ä¸ªæ—‹è½¬çŸ©é˜µå¾—åˆ°ç»•zyxè½´æ—‹è½¬ä¸€æ¬¡åçš„çŸ©é˜µ
+function onceRotate()
+    syms R P Y ;
+    R_x =[1 0 0;
+        0 cos(R) -sin(R);
+        0 sin(R) cos(R)];
+    R_y =[cos(P) 0 sin(P);
+    0 1 0;
+    -sin(P) 0 cos(P)];
+   
+    R_z =[cos(Y) -sin(Y) 0;
+        sin(Y) cos(Y) 0;
+        0 0 1];
+    R_zyx=R_z*R_y*R_x;
+    R_zyx
+    R_zyx'
+end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

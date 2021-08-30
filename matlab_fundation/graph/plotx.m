@@ -2,7 +2,7 @@ function plotx_fun()
 plot_tan()
 end
 
-function plot_tan()
+function plot_tan()                                                                       
 clc 
 clear
 x =0:0.01:2*pi;
@@ -16,7 +16,7 @@ plot(x,yt)
 
 end
 function plotx_()
-%»æÖÆÇúÏß£¨¶þÎ¬£©plotº¯Êý
+%ç»˜åˆ¶æ›²çº¿ï¼ˆäºŒç»´ï¼‰plotå‡½æ•°
 x=0:0.1:100;
 y=x.^2+4;
 subplot(2,2,1)
